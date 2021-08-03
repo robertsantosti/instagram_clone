@@ -1,8 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", "Segoe UI", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: #444;
+  text-decoration: none;
+}
+
+.header-wrapper {
+  width: 100%;
+  height: 54px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-left: 54px;
+  padding-right: 54px;
+
+  box-shadow: 1px 1px 5px #aaa;
+}
+
+.header-wrapper .logo {
+  width: 125px;
+}
+
+.header-wrapper .search-wrapper {
+  position: relative;
+  width: 20%;
+}
+
+.header-wrapper .search-wrapper input {
+  height: 36px;
+  width: 100%;
+  padding-left: 30px;
+}
+.header-wrapper .search-wrapper .material-icons {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+.header-wrapper .navbar-wrapper {
+  display: flex;
+  gap: 16px;
 }
